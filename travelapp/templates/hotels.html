@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/hotels.css'%}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark  ">
+        <a class="navbar-brand" href="#"><img width="280px" style="margin-top: 0px; " src="{% static 'images/aaa.png'%}" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div  class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul style="margin-left: 14%;margin-top: 6%;" class="navbar-nav mr-auto">
+            <li  style="padding-right: 55px;font-family:'poppins',sans-serif;"  class="nav-item active">
+              <a class="nav-link" href="{% url 'newhome'%}">HOME<span class="sr-only">(current)</span></a>
+            </li>
+            <li style="color: aliceblue; padding-right: 55px;font-family:'poppins',sans-serif;" class="nav-item">
+              <a class="nav-link" href="{% url 'popular'%}">POPULAR PLACES</a>
+            </li>
+            <li style="padding-right: 55px;font-size: larger; font-family:'poppins',sans-serif;"  class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                CATAGORIES
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="{% url 'beaches'%}">BEACHES</a>
+                <a class="dropdown-item" href="{% url 'mountains'%}">MOUNTAINS</a>
+                <a class="dropdown-item" href="{% url 'forest'%}">FOREST</a>
+              </div>
+            </li>
+            <li style="padding-right: 55px;font-family:'poppins',sans-serif;" class="nav-item">
+              <a class="nav-link" href="{% url 'contact'%}">CONTACT US</a>
+            </li>
+          </ul>
+          <div class="div1">
+            <h2 style="margin-bottom: 40px; font-family:'poppins',sans-serif;border-radius: 5px; border: 2px solid rgb(65, 103, 173);font-size: 14px;padding: 11px;color: aliceblue;margin-right: 20px;">
+            <a style="text-decoration: none;color: rgb(196, 223, 247);" href="{% url 'login' %}">SIGN IN</a></h2>
+          </div>
+         </div>
+        </nav>
+
+        <div style="margin-top: -10px;" class="roww">
+          <div class="columnn">
+          <a href="{% url 'paramounthotel' %}"><img src="{% static 'images/hotel.jpg'%}"></a>
+          <h1>&ensp;PARAMOUNT</h1>
+          <img src="{% static 'images/hotel.jpg'%}">
+          <h1>&ensp;HOTEL1</h1>
+          </div>
+          <div class="columnn">
+            <img src="{% static 'images/hotel.jpg'%}">
+            <h1>HOTEL2</h1>
+            <img src="{% static 'images/hotel.jpg'%}">
+          <h1>&ensp;HOTEL3</h1>
+          </div>
+          <div class="columnn">
+            <img src="{% static 'images/hotel.jpg'%}">
+            <h1>HOTEL4</h1>
+            <img src="{% static 'images/hotel.jpg'%}">
+          <h1>&ensp;HOTEL5</h1>
+          </div>
+          <div class="columnn">
+            <img src="{% static 'images/hotel.jpg'%}">
+            <h1>HOTEL6</h1>
+            <img src="{% static 'images/hotel.jpg'%}">
+          <h1>&ensp;HOTEL7</h1>
+          </div>
+          <div class="columnn">
+            <img src="{% static 'images/hotel.jpg'%}">
+            <h1>HOTEL8</h1>
+            <img src="{% static 'images/hotel.jpg'%}">
+          <h1>&ensp;GOA</h1>
+          </div>
+        </div> 
+        
+    </body>
+</html>

@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/sellerhome.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark  ">
+        <a class="navbar-brand" href="#"><img width="280px" style="margin-top: 0px; " src="{% static 'images/aaa.png'%}" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div  class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul style="margin-left: 14%;margin-top: 6%;" class="navbar-nav mr-auto">
+            <li  style="padding-right: 55px;font-family:'poppins',sans-serif;"  class="nav-item active">
+              <a class="nav-link" href="{% url 'newhome'%}">HOME<span class="sr-only">(current)</span></a>
+            </li>
+            <li style="color: aliceblue; padding-right: 55px;font-family:'poppins',sans-serif;" class="nav-item">
+              <a class="nav-link" href="{% url 'popular'%}">POPULAR PLACES</a>
+            </li>
+            <li style="padding-right: 55px;font-size: larger; font-family:'poppins',sans-serif;"  class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                CATAGORIES
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="{% url 'beaches'%}">BEACHES</a>
+                <a class="dropdown-item" href="{% url 'mountains'%}">MOUNTAINS</a>
+                <a class="dropdown-item" href="{% url 'forest'%}">FOREST</a>
+              </div>
+            </li>
+            <li style="padding-right: 55px;font-family:'poppins',sans-serif;" class="nav-item">
+              <a class="nav-link" href="{% url 'contact'%}">CONTACT US</a>
+            </li>
+          </ul>
+         </div>
+        </nav>
+
+
+    <div class="row">
+        <div class="column">
+        <img src="{% static 'images/addhotel.png'%}">
+        <br>
+        <center><a href="{% url 'sellerlogin'%}"><h1>ADD YOUR HOTEL</h1></a><h3>5% of userpayment is charged for adding your hotel</h3></center>
+        </div>
+    </div>
+     <div><center><h1 style="color: rgb(110, 114, 117); padding-top: 3%;padding-bottom: 3%;">WHY YOU ADD HOTELS ON TRAVELIA</h1></center></div>
+    <div style="margin-top: -10px;" class="roww">
+     <div class="columnn">
+        <h1>ON-TIME PAYMENT</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ad illo autem minus enim laudantium sapiente eaque. Cupiditate, cumque. Laboriosam esse quos numquam dolorem deserunt dignissimos, necessitatibus cumque, et vero voluptatem, reiciendis deleniti laborum ipsum ad neque consequatur officiis velit.</p>
+        </div>
+        <div class="columnn">
+          <h1>REACH LOTS OF CUSTOMERS</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita atque ex, illo aperiam similique cupiditate illum fuga nobis unde? Inventore iste, unde pariatur, ab eaque reprehenderit sunt accusantium iusto hic asperiores corrupti nulla ut quis obcaecati facere eum aliquid dignissimos.</p>
+        </div>
+        <div class="columnn">
+          <h1>EASY ACCESS</h1>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum est ab tenetur esse vitae temporibus perspiciatis voluptates, animi quam ipsum ducimus nesciunt! Sapiente officiis hic repellendus, quae tenetur tempora facilis quisquam in, illo iste suscipit, aliquam placeat expedita dicta quos.
+        </div>
+        <div class="columnn">
+            <h1>ABCD</h1>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis ea blanditiis a eos voluptatem eveniet quae ratione similique consectetur consequuntur cumque suscipit aliquam fugiat, accusamus esse sunt quidem error voluptatibus tenetur. Soluta voluptates enim numquam minima corrupti quibusdam neque officia.
+          </div>
+      </div> 
+</body>
+</html>
