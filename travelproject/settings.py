@@ -16,7 +16,7 @@ import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-PROJECT_ROOT=os.name.dirname(os.path.abspath(__file__))
+
 
 
 # Quick-start development settings - unsuitable for production
@@ -130,7 +130,8 @@ USE_TZ = True
 
 ALLOWED_HOSTS=['*']
 
-STATIC_ROOT=os.path.join(PROJECT_ROOT,'staticfiles')
+STATICFILES_STORAGE='whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATIC_ROOT=os.path.join(BASE_DIR,'static')
 STATIC_URL = 'static/'
 
 # Default primary key field type
@@ -138,4 +139,4 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS=(os.path.join(PROJECT_ROOT,'static'),)
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-STATICFILES_STORAGE='whitenoise.storage.CompressedManifestStaticFilesStorage'
+
