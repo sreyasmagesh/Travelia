@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-ovt)x9@pmn7qy18$je1ep2ey@^fup@w+i1!vvg+6y#3lhohlqn
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -38,8 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
-    "whitenoise.runserver_nostatic",
-    "django.contrib.staticfiles",
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'travelapp',
